@@ -24,6 +24,12 @@ body {
   width: 100vw;
   background-color: #000;
 }
+#page > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
 .Primary-navbar {
   position: relative;
   height: 44px;
@@ -47,11 +53,6 @@ body {
   font-weight: 100;
   height: 1.2vw;
   width: auto;
-}
-#page > nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .Secondary-navbar {
@@ -105,8 +106,29 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-#page2 {
+/* #page2 {
   height: 100vh;
   width: 100vw;
   background-color: #000;
+} */
+#page1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+}
+#page1 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#page1 > h1 {
+  font-size: 4vw;
+  color: #fff;
+  font-weight: 400;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }

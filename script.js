@@ -47,5 +47,30 @@ gsap.to("#page>video",{
       document.querySelector("#page>video").play()
   }
 })
+gsap.to("#page",{
+  scrollTrigger:{
+      trigger:`#page`,
+      start:`top top`,
+      end:`bottom top`,
+      scroller:`#main`,
+      pin:true
+  }
+})
 
   
+var tl = gsap.timeline({
+  scrollTrigger:{
+      trigger:`#page1`,
+      start:`top top`,
+      scrub:1,
+      scroller:`#main`,
+      pin:true
+  }
+})
+
+
+tl.to("#page1>h1",{
+  top:`-50%`
+})
+
+
