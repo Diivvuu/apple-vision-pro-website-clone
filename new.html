@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 200vh; /* Set a tall enough height for the body */
+      }
+
+      #navbar-primary {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+      }
+
+      #navbar-secondary {
+        background-color: #444;
+        color: white;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      #content {
+        position: relative;
+        height: 200vh;
+        padding: 20px;
+      }
+    </style>
+    <title>Sticky Navbar Example</title>
+  </head>
+  <body>
+    <div id="navbar-primary">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="navbar-secondary">
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </div>
+
+    <div id="content">
+      <!-- Your page content goes here -->
+      <h1>Welcome to My Website</h1>
+      <p>This is a sample webpage with two sticky navbars.</p>
+      <!-- Add more content as needed -->
+    </div>
+    <div id="aage">hello</div>
+  </body>
+</html>
