@@ -30,25 +30,36 @@ ScrollTrigger.refresh();
 
 }
 loco()
-gsap.to("#page>video",{
-    scrollTrigger:{
-        trigger:`#page>video`,
-        start:`1.1% top`,
-        end:`bottom top`,
-        scroller:`#main`,
-        markers: true
-    },
-    onStart:()=>{
-        document.querySelector("#page>video").play()
-    }
-})
+// ... Your existing code ...
 
-gsap.to("#page",{
-    scrollTrigger:{
-        trigger:`#page`,
-        start:`top top`,
-        end:`bottom top`,
-        scroller:`#main`,
-        pin:true
-    }
-})
+gsap.to("#page>video", {
+  scrollTrigger: {
+    trigger: "#page>video",
+    start: "-10% top",
+    end: "bottom top",
+    scroller: "#main",
+    // markers: true,
+  },
+  onStart: () => {
+    document.querySelector("#page>video").play();
+  },
+});
+
+gsap.to("#page", {
+  scrollTrigger: {
+    trigger: "#page",
+    start: "top top",
+    end: "bottom 95%",
+    scroller: "#main",
+    pin: true,
+    // markers: true
+  },
+});
+
+
+// gsap.to("#page-bottom", {
+//   scrollTrigger:{
+//     trigger : `#page-bottom`,
+//     start `5% top`
+//   }
+// })
