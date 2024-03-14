@@ -57,9 +57,28 @@ gsap.to("#page", {
 });
 
 
-// gsap.to("#page-bottom", {
-//   scrollTrigger:{
-//     trigger : `#page-bottom`,
-//     start `5% top`
-//   }
-// })
+gsap.to("#page-bottom", {
+  scrollTrigger:{
+    trigger : `#page-bottom`,
+    start : `5% 60%`,
+    end : `bottom 70%`,
+    scroller :  `#main`,
+    scrub: 5,
+    // markers  : true,
+  },
+  opacity: 0
+})
+
+var t1 = gsap.timeline({
+  scrollTrigger:{
+    trigger:`#page1`,
+    start:`15% 50%`,
+    scrub: 3,
+    scroller: `#main`,
+    // markers: true,
+    pin: true,
+  }
+})
+t1.to("#page1 > h1", { 
+  top: `-50%`
+})

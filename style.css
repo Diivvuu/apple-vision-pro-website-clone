@@ -141,13 +141,20 @@ body {
   object-fit: cover;
 }
 #page1 > h1 {
-  font-size: 4vw;
+  font-size: 2.8vw;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   position: absolute;
   bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
-/* Add more styles as needed for your page layout and content */
+/* page 2 */
+#page2 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+#page2 > video {
+}
