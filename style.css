@@ -157,4 +157,17 @@ body {
   width: 100vw;
 }
 #page2 > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#page2 > h1 {
+  font-size: 2.8vw;
+  color: #fff;
+  font-weight: 600;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
