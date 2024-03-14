@@ -120,7 +120,7 @@ var tl3 = gsap.timeline({
   scrub: 5,
   // end : `230% 200% `,
   scroller: `#main`,
-  markers: true,
+  // markers: t rue,
   pin: true,
   }
 })
